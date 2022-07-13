@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Document</title>
+    <title>Proyecto esp32 arm tech</title>
 </head>
 
 <body>
@@ -18,18 +18,7 @@
                     <div class="flex-shrink-0 flex items-center">
                         <h1 class="text-gray-300">ESP32 Arm Tech</h1>
                     </div>
-                    <div class="hidden sm:block sm:ml-6">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
 
-                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-
-                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-
-                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -52,7 +41,9 @@
     <div class="p-20 w-100 text-lg ">
         <h2 class="text-bold text-left text-4xl">Introduccion</h2>
         <div class="flex">
-            <p class="w-2/4">Con un servidor web alojado en un ESP32 podremos controlar los movimientos de un brazo robot, en este caso el brazo seleccionado es <a href="https://cults3d.com/en/3d-model/gadget/diy-arduino-robot-arm-with-smartphone-control" class="bg-gray-400 text-white px-3 py-2 rounded-md text-base font-medium">EEZYbotARM MK2</a>.
+            <p class="w-2/4">El proyecto consta de un brazo diseNado a partir de 6 servomotores controlados por una Web a partir de TCP/IP por medio del ESP32, a lo largo del mismo nos encontramos con varios desafios que fuimos resolviendo mediante pruebas e investigacion,
+                incorporando asi conocimientos de seNales de pulso, niveles logicos, arquitectura de un servomotor, soldadura, circuitos electronicos, entre otros tantos. El mismo nos hizo integrar varias areas de la industria 4.0, tales como protocolos
+                de comunicacion, control de motores, diseNo Web, impresion 3D y PWM. El modelo del brazo es <a href="https://cults3d.com/en/3d-model/gadget/diy-arduino-robot-arm-with-smartphone-control" class="bg-gray-400 text-white px-3 py-2 rounded-md text-base font-medium">EEZYbotARM MK2</a>.
                 Este modelo lo podemos descargar desde Thingiverse e imprimirlo con una impresora 3d. El servidor web es basado en un proyecto de <a href="https://www.youtube.com/watch?v=RNpHQ1kUMDU" class="bg-gray-400 text-white px-3 py-2 rounded-md text-base font-medium">FABRI creato</a>,
                 el cual fue modificado para agregar los servos correspondientes a cada eje.</p>
             <div class="w-2/4">
@@ -62,10 +53,9 @@
         </div>
     </div>
     <div>
-        <h3>Componentes</h3>
         <div class="bg-white">
+            <h2 class="text-bold text-left text-4xl">Componentes</h2>
             <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h2 class="sr-only">Products</h2>
 
                 <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                     <a href="#" class="group">
@@ -103,7 +93,12 @@
                         </div>
                         <h3 class="mt-4 text-sm text-gray-700">conversor de niveles lógicos 3.3/5v</h3>
                     </a>
-
+                    <a href="#" class="group">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://uelectronics.com/wp-content/uploads/2017/06/AR0094-Fuente-Conmutada-12V-10A-V1.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-sm text-gray-700">fuente switching 12v 10a</h3>
+                    </a>
                     <!-- More products... -->
                 </div>
             </div>
